@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/api.service.spec.ts"],
+  "sourcesContent": ["import {apiMessage} from './api.service';\n\ndescribe('apiMessage', () => {\n  it('reads a string detail from the API', () => {\n    expect(apiMessage({error: {detail: 'Customer not found'}})).toBe('Customer not found');\n  });\n\n  it('joins field validation messages', () => {\n    expect(apiMessage({error: {detail: [{msg: 'Enter a mobile number'}, {msg: 'Name is too short'}]}}))\n      .toBe('Enter a mobile number Name is too short');\n  });\n\n  it('uses a plain message when the response has no detail', () => {\n    expect(apiMessage({})).toBe('Something went wrong. Please try again.');\n  });\n});\n"],
+  "mappings": ";;;;;;;AAAA;AAEA,SAAS,cAAc,MAAK;AAC1B,KAAG,sCAAsC,MAAK;AAC5C,WAAO,WAAW,EAAC,OAAO,EAAC,QAAQ,qBAAoB,EAAC,CAAC,CAAC,EAAE,KAAK,oBAAoB;EACvF,CAAC;AAED,KAAG,mCAAmC,MAAK;AACzC,WAAO,WAAW,EAAC,OAAO,EAAC,QAAQ,CAAC,EAAC,KAAK,wBAAuB,GAAG,EAAC,KAAK,oBAAmB,CAAC,EAAC,EAAC,CAAC,CAAC,EAC/F,KAAK,yCAAyC;EACnD,CAAC;AAED,KAAG,wDAAwD,MAAK;AAC9D,WAAO,WAAW,CAAA,CAAE,CAAC,EAAE,KAAK,yCAAyC;EACvE,CAAC;AACH,CAAC;",
+  "names": []
+}
