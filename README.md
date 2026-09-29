@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Anand Jewellers — Customer Interaction & Workshop Tracking System
 
 Production-oriented baseline for the Anand Jewellers application:
@@ -99,3 +100,7 @@ The template should accept the customer name and order number as parameters. The
 - Add audit logging and retention rules required by the client.
 - Configure monitoring/alerts.
 - Perform UAT with real workflows before handover.
+=======
+# Jaga_AJ_repo
+Anand_Jewellery
+>>>>>>> 382098bf4be8d6a9c4bd3bf52fab3133842aa1dc
